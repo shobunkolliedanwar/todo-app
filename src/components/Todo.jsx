@@ -56,7 +56,7 @@ const Todo = () => {
                 />
                 <button
                     onClick={add}
-                    className='border-none rounded-full bg-orange-600 w-32 h-14 text-white text-lg font-medium cursor-pointer hover:bg-orange-700 transition'
+                    className='border-none rounded-full bg-green-600 w-32 h-14 text-white text-lg font-medium cursor-pointer hover:bg-green-700 transition'
                 >
                     ADD +
                 </button>
@@ -78,7 +78,7 @@ const Todo = () => {
 
             {/* Footer */}
             <footer className='mt-8 text-center text-sm text-gray-500 border-t pt-4'>
-                Crafted with <span className="text-red-500">❤️</span> by <span className="font-semibold text-orange-600">Shobun Kollied Anwar</span>
+                Crafted with <span className="text-red-500">❤️</span> by <span className="font-semibold text-green-600">Shobun Kollied Anwar</span>
             </footer>
         </div>
     );
