@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import todo_icon from '../assets/todo_icon.png'
 import TodoItems from './TodoItems'
+import AdsterraAd from './AdsterraAd';
 
 const Todo = () => {
     const [todoList, setTodoList] = useState(
@@ -40,13 +41,11 @@ const Todo = () => {
 
     return (
         <div className='bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl shadow-md'>
-            {/* Title */}
             <div className='flex items-center mt-7 gap-2'>
                 <img className='w-8' src={todo_icon} alt="Todo Icon" />
                 <h1 className='text-3xl font-semibold'>To Do List</h1>
             </div>
 
-            {/* Input Box */}
             <div className='flex items-center my-7 bg-gray-200 rounded-full'>
                 <input
                     ref={inputRef}
@@ -62,7 +61,6 @@ const Todo = () => {
                 </button>
             </div>
 
-            {/* ToDo List */}
             <div className='flex-1'>
                 {todoList.map((item, index) => (
                     <TodoItems
@@ -76,10 +74,12 @@ const Todo = () => {
                 ))}
             </div>
 
-            {/* Footer */}
             <footer className='mt-8 text-center text-sm text-gray-500 border-t pt-4'>
-                Crafted with <span className="text-red-500">❤️</span> by <span className="font-semibold text-green-600">Shobun Kollied Anwar</span>
+                Crafted with <span className="text-red-500">❤️</span> by <span className="font-semibold text-green-600"><a href='https://www.linkedin.com/in/shobunkolliedanwar/' target='_blank'>Shobun Kollied Anwar</a></span>
             </footer>
+
+            {/* Tambahkan iklan di bawah footer */}
+            <AdsterraAd />
         </div>
     );
 };
